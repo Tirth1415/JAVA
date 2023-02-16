@@ -1,0 +1,9 @@
+package Dao;
+
+import Model.User;
+
+public class UserDao {
+	public static void insertuser(User u) {
+
+	}
+}

@@ -1,0 +1,21 @@
+package Dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import Connectivity.DBConnection;
+import Model.User;
+
+public class UserDao {
+	public static void insertuser(User u) {
+		try {
+			Connection connection = DBConnection.createConnection();
+			String sql = "Insert into user(name,contact,address,email,password) values (?,?,?,?,?)";
+			PreparedStatement pst = connection.prepareStatement(sql);
+			
+			pst.setString(1, u.getName());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,15 @@
+package Connectivity;
+
+import java.sql.Connection;
+
+public class DBConnection {
+public static Connection createConnection() {
+	 Connection connection = null;
+	 
+	 try {
+		
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
+}
+}
