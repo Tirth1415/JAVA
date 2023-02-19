@@ -14,6 +14,13 @@
 		out.print(msg);
 	}
 	%>
+	
+	<%
+	String msg1 = (String)request.getAttribute("msg1");
+	if (msg1 != null) {
+		out.print(msg1);
+	}
+	%>
 
 	<form action="UserController" method="post">
 		<table>
